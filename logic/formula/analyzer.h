@@ -8,17 +8,17 @@ namespace Analyzer
 {
 
 /*
- * Renvoit un tableau contenant la table de vérité de la fonction arb
+ * Renvoie un tableau contenant la table de vérité de la fonction arb
  */
 QList<QList<QChar>> makeTruthTable(MyBinTree* arb, QStringList const& vars);
 
 /*
- * Renvoit la forme canonique disjonctive de la fonction.
+ * Renvoie la forme canonique disjonctive de la fonction.
  */
 QStringList getDisjForm(QList<QList<QChar>> const& table, QStringList const& vars);
 
 /*
- * Renvoit la forme canonique conjonctive de la fonction.
+ * Renvoie la forme canonique conjonctive de la fonction.
  */
 QStringList getConjForm(QList<QList<QChar>> const& table, QStringList const& vars);
 
@@ -28,8 +28,7 @@ QStringList getConjForm(QList<QList<QChar>> const& table, QStringList const& var
 void fillTreeWithValues(MyBinTree* arb, QStringList const& vars, QList<QChar> const& values);
 
 /*
- * Analyse l'arbre binaire, supprime tout les noeuds et remplace la racine par le
- * resultat de la fonction.
+ * Analyse l'arbre binaire, supprime tous les noeuds et remplace la racine par le resultat de la fonction.
  */
 void getFuncResult(MyBinTree* arb);
 

@@ -8,7 +8,7 @@ namespace MyParser
 {
 
 /*
- * Renvoit la liste de token de la fonction.
+ * Renvoie la liste de token de la fonction.
  * Lance des exceptions si la fonction contient des erreurs.
  */
 Tokens tokenizeIt(QString const& function);

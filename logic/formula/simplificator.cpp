@@ -14,7 +14,7 @@ QStringList simplifyIt(QStringList terms)
     QStringList last_terms;
     bool stop(false);
 
-    doAbsorbation(terms);
+   doAbsorptions(terms);
 
     while(!stop)
     {
@@ -37,7 +37,7 @@ QStringList simplifyIt(QStringList terms)
         if(!cons_list.isEmpty())
         {
             terms.append(cons_list);
-            doAbsorbation(terms);
+            doAbsorptions(terms);
 
             if(terms != last_terms)
             {
@@ -52,9 +52,9 @@ QStringList simplifyIt(QStringList terms)
 }
 
 /*
- * Effectue les absorbations possibles sur terms.
+ * Effectue les absorption possibles sur terms.
  */
-void doAbsorbation(QStringList& terms)
+void doAbsorptions(QStringList& terms)
 {
     bool absor(false);
     QString facto;
@@ -67,7 +67,7 @@ void doAbsorbation(QStringList& terms)
         {
             for(int j(i + 1); j < terms.size(); )
             {
-                facto = MyUtils::isThereAbsorbation(terms[i], terms[j]);
+                facto = MyUtils::isThereAbsorption(terms[i], terms[j]);
                 if(facto.isEmpty())
                 {
                     j++;

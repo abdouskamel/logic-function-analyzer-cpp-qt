@@ -12,9 +12,9 @@ namespace Simplificator
 QStringList simplifyIt(QStringList terms);
 
 /*
- * Effectue les absorbations possibles sur terms.
+ * Effectue les absorptions possibles sur terms.
  */
-void doAbsorbation(QStringList& terms);
+void doAbsorptions(QStringList& terms);
 
 /*
  * Supprime les consensus se trouvant dans la fonction.
