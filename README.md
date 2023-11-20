@@ -1,6 +1,6 @@
-# Logic Functions Analyzer in C++ and Qt
+# Logic Functions Analyzer with C++ and Qt
 
-Input a logic function and get its truth table, DNF (Disjunctive Normal Form), and simplified form.
+Input a logic function and get its truth table, DNF (Disjunctive Normal Form), CNF (Conjunctive Normal Form), and simplified form.
 
 You can also fill a truth table and let the program create the logic function.
 
@@ -10,7 +10,7 @@ This projects has been tested with `Qt 5.15.3`.
 
 Open `logic-formula-analyzer-cpp-qt.pro` with Qt Creator then compile and run.
 
-Functions examples:
+## Functions examples:
 
 ```A + B```
 
