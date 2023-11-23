@@ -20,3 +20,4 @@ Open `logic-formula-analyzer-cpp-qt.pro` with Qt Creator then compile and run.
 
 ```A + B.(C @ A)```
 
+![illustration](ui.png)
